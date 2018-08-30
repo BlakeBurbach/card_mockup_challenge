@@ -1,12 +1,22 @@
+@font-face {
+    font-family: Avenir;
+    src: url(Fonts/AvenirLTStd-Black.otf)
+}
+
+@font-face {
+    font-family: Avenir-Light;
+    src: url(Fonts/AvenirLTStd-Book.otf);
+}
+
 body {
-    font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
     background-color: #323232;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(12, 100px);
-    grid-template-rows: repeat(7, 100px);
+    grid-template-columns: repeat(12, 90px);
+    grid-template-rows: repeat(7, 90px);
+    grid-gap: 10px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -22,7 +32,7 @@ body {
 }
 
 .container__information {
-    grid-column: 3 / span 13;
+    grid-column: 3 / 13;
     grid-row: 1 / 8 ;
     justify-self: stretch;
     align-self: auto; 
@@ -32,13 +42,25 @@ body {
     margin: 0;
     padding-left: 30%;
     padding-right: 5%;
-    padding-top: 10%;
+    padding-top: 8.5%;
     padding-bottom: 10%;
 }
 
-.container__information--title {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 1.5;
-    margin: 0;
-}
+    .container__information--title {
+        font-family: Avenir, 'Arial', 'Helvetica', sans-serif;
+        font-size: 36px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .container__information--type {
+        font-family: Avenir-Light, 'Arial', 'Helvetica', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    .container__information--description {
+        font-family: Avenir-Light, 'Arial', 'Helvetica', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+    }
